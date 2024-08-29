@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 29 aug 2024 om 10:36
+-- Gegenereerd op: 29 aug 2024 om 13:54
 -- Serverversie: 10.4.28-MariaDB
 -- PHP-versie: 8.2.4
 
@@ -31,8 +31,16 @@ CREATE TABLE `concerten` (
   `concert_id` int(11) NOT NULL,
   `concert_data` date NOT NULL,
   `concert_artiest` text NOT NULL,
-  `concert_locatie_id` int(11) NOT NULL
+  `concert_locatie_id` int(11) NOT NULL,
+  `concert_genre` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `concerten`
+--
+
+INSERT INTO `concerten` (`concert_id`, `concert_data`, `concert_artiest`, `concert_locatie_id`, `concert_genre`) VALUES
+(0, '0000-00-00', '', 0, '');
 
 -- --------------------------------------------------------
 
